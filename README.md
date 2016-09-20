@@ -1,6 +1,8 @@
-# slack-bot
+[![Build Status](https://snap-ci.com/thinkers-makers/luis-clj/branch/master/build_image)](https://snap-ci.com/thinkers-makers/luis-clj/branch/master)
 
-A Clojure library designed to ... well, that part is up to you.
+# luis-clj
+
+A Clojure client library for LUIS - the Microsoft Language Understanding Intelligent Service API.
 
 ## Usage
 
