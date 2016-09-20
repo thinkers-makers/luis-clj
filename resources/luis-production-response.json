@@ -1,0 +1,123 @@
+{
+  "query": "arrange a meeting between gary and seb",
+  "intents": [
+    {
+      "intent": "arrange-meeting",
+      "score": 0.9999995,
+      "actions": [
+        {
+          "triggered": false,
+          "name": "arrange-meeting",
+          "parameters": [
+            {
+              "name": "persons",
+              "required": true,
+              "value": [
+                {
+                  "entity": "gary",
+                  "type": "person",
+                  "score": 0.9904281
+                },
+                {
+                  "entity": "seb",
+                  "type": "person",
+                  "score": 0.9203685
+                }
+              ]
+            },
+            {
+              "name": "when",
+              "required": true,
+              "value": null
+            },
+            {
+              "name": "location",
+              "required": true,
+              "value": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "intent": "None",
+      "score": 0.0163454488
+    },
+    {
+      "intent": "absent",
+      "score": 0.014615207,
+      "actions": [
+        {
+          "triggered": true,
+          "name": "absent",
+          "parameters": [
+            {
+              "name": "person",
+              "required": true,
+              "value": [
+                {
+                  "entity": "gary",
+                  "type": "person",
+                  "score": 0.9904281
+                },
+                {
+                  "entity": "seb",
+                  "type": "person",
+                  "score": 0.9203685
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "intent": "working-from-home",
+      "score": 0.00574727776,
+      "actions": [
+        {
+          "triggered": true,
+          "name": "working-from-home",
+          "parameters": [
+            {
+              "name": "person",
+              "required": true,
+              "value": [
+                {
+                  "entity": "gary",
+                  "type": "person",
+                  "score": 0.9904281
+                },
+                {
+                  "entity": "seb",
+                  "type": "person",
+                  "score": 0.9203685
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "intent": "holiday",
+      "score": 1.74560644E-09
+    }
+  ],
+  "entities": [
+    {
+      "entity": "gary",
+      "type": "person",
+      "startIndex": 26,
+      "endIndex": 29,
+      "score": 0.9904281
+    },
+    {
+      "entity": "seb",
+      "type": "person",
+      "startIndex": 35,
+      "endIndex": 37,
+      "score": 0.9203685
+    }
+  ]
+}

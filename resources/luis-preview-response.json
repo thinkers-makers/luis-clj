@@ -1,0 +1,56 @@
+{
+    "dialog": {
+        "contextId": "fa5ac2c4-c4c5-4745-8873-801d5471a1e2",
+        "parameterName": "persons",
+        "parameterType": "person",
+        "prompt": "Who would you like to attend the meeting?",
+        "status": "Question"
+    },
+    "entities": [
+        {
+            "endIndex": 27,
+            "entity": "monday",
+            "resolution": {
+                "date": "XXXX-WXX-1"
+            },
+            "startIndex": 22,
+            "type": "builtin.datetime.date"
+        }
+    ],
+    "query": "arrange a meeting for monday",
+    "topScoringIntent": {
+        "actions": [
+            {
+                "name": "arrange-meeting",
+                "parameters": [
+                    {
+                        "name": "persons",
+                        "required": true,
+                        "value": null
+                    },
+                    {
+                        "name": "when",
+                        "required": true,
+                        "value": [
+                            {
+                                "entity": "monday",
+                                "resolution": {
+                                    "date": "XXXX-WXX-1"
+                                },
+                                "type": "builtin.datetime.date"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "location",
+                        "required": true,
+                        "value": null
+                    }
+                ],
+                "triggered": false
+            }
+        ],
+        "intent": "arrange-meeting",
+        "score": 0.9999871
+    }
+}
